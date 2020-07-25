@@ -21,7 +21,7 @@ This definition requires an Azure subscription to use. You can create a [free ac
 2. To use VS Code's copy of this definition:
    1. Start VS Code and open your project folder.
    2. Press <kbd>F1</kbd> select and **Remote-Containers: Add Development Container Configuration Files...** from the command palette.
-   3. Select the Azure Functions & pwsh (.NET Core 2.1) definition.
+   3. Select the Azure Functions & PowerShell 7 definition.
 
 3. To use latest-and-greatest copy of this definition from the repository:
    1. Clone this repository.
