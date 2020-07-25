@@ -21,7 +21,8 @@ ENV DOTNET_SYSTEM_GLOBALIZATION_INVARIANT=false \
     # set a fixed location for the Module analysis cache
     PSModuleAnalysisCachePath=/var/cache/microsoft/powershell/PSModuleAnalysisCache/ModuleAnalysisCache
 
-ENV FUNCTIONS_WORKER_RUNTIME=powershell
+ENV FUNCTIONS_WORKER_RUNTIME=powershell \
+    FUNCTIONS_WORKER_RUNTIME_VERSION=~7
 
 # Install needed packages and setup non-root user. Use a separate RUN statement to add your own dependencies.
 RUN apt-get update \
