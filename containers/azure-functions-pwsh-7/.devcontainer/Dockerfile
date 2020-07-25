@@ -1,5 +1,5 @@
 
-FROM mcr.microsoft.com/dotnet/core/sdk:2.1
+FROM mcr.microsoft.com/dotnet/core/sdk:3.1
 
 # This Dockerfile adds a non-root user with sudo access. Update the “remoteUser” property in
 # devcontainer.json to use it. More info: https://aka.ms/vscode-remote/containers/non-root-user.
@@ -7,8 +7,8 @@ ARG USERNAME=vscode
 ARG USER_UID=1000
 ARG USER_GID=$USER_UID
 
-ARG PS_VERSION=6.2.3
-ARG PS_PACKAGE=powershell_${PS_VERSION}-1.debian.9_amd64.deb
+ARG PS_VERSION=7.0.3
+ARG PS_PACKAGE=powershell_${PS_VERSION}-1.debian.10_amd64.deb
 ARG PS_PACKAGE_URL=https://github.com/PowerShell/PowerShell/releases/download/v${PS_VERSION}/${PS_PACKAGE}
 
 # Download the Linux package and save it
