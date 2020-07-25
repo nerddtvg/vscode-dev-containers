@@ -1,3 +1,5 @@
+#!/usr/bin/env bash
+
 # Verify running as root / using sudo
 if [ "$(id -u)" -ne 0 ]; then
     echo 'Script must be run a root. Use sudo or set "USER root" before running the script.'
